@@ -1,0 +1,20 @@
+.button01 {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 1.6px;
+  display: inline-block;
+  /*color: white;*/ /* 文字顏色通常固定 */
+  transition: all 0.3s ease; /* 讓變色或縮放有動畫效果 */
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 加一點陰影質感 */
+  cursor: pointer;
+  border-radius: 8px;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.button01:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px); /* 輕微往上飄 */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
