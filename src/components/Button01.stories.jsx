@@ -15,7 +15,7 @@ export default {
 export const Primary = {
   args: {
     label: '按我',
-    backgroundColor: '#1ea7fd',
+    variant: 'primary'
   },
 };
 
@@ -23,8 +23,7 @@ export const Primary = {
 export const Warning = {
   args: {
     label: '刪除',
-    backgroundColor: 'red',
-    color: '#ffffff'
+    variant: 'warning'
   },
 };
 
