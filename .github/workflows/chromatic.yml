@@ -11,17 +11,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Debug Secret
-        run: |
-          if [ -z "${{ secrets.CHROMATIC_PROJECT_TOKEN }}" ]; then
-            echo "❌ Secret is EMPTY!"
-            exit 1
-          else
-            echo "✅ Secret is FOUND!"
-          fi
-        env:
-          SECRET_VALUE: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
-
       - name: Install dependencies
         run: npm install
 
