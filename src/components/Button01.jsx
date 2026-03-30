@@ -3,7 +3,7 @@ import './Button01.css'; // 記得建立對應的 CSS 檔案
 
 const STATUS_STYLES = {
   primary: { backgroundColor: '#1ea7fd', color: 'white' },
-  warning: { backgroundColor: 'red', color: 'white' },
+  warning: { backgroundColor: '#d31200', color: 'white' },
   default: { backgroundColor: '#eee', color: '#333' }
 };
 
