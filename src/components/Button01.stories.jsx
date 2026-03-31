@@ -5,7 +5,9 @@ export default {
   component: Button01,
   tags: ['autodocs'],
   argTypes: {
-    label:{control: 'text'},
+    variant:{ control: 'text'},
+    size:{ control: 'text'},
+    label:{ control: 'text'},
     backgroundColor: { control: 'color' }, // 讓顏色選擇器正常運作
     color:{ control: 'color'}
   },
