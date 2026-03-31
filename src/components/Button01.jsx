@@ -7,11 +7,11 @@ const STATUS_STYLES = {
   default: { backgroundColor: '#eee', color: '#333' }
 };
 
-const Button01 = ({ label, variant = 'default', onClick, size = 'md' }) => {
+const Button01 = ({ label, variant = 'default', onClick, size = 'md', backgroundColor, color }) => {
   const activeStyle = STATUS_STYLES[variant] || STATUS_STYLES.default;
   const style = {
-    backgroundColor: activeStyle.backgroundColor, // 這裡寫死了，外部沒辦法傳 backgroundColor 進來覆蓋
-    color: activeStyle.color,
+    backgroundColor: backgroundColor || activeStyle.backgroundColor, // 這裡寫死了，外部沒辦法傳 backgroundColor 進來覆蓋
+    color: color || activeStyle.color,
     padding: size === 'sm' ? '8px 16px' : '12px 28px',
     fontWeight: size === 'sm' ? '400' : '700',
     border: 'none',
